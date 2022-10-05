@@ -196,8 +196,9 @@ export function linearMap(
 // check if the repository is public
 export function isPublicRepo() {
   const repoLabel = $('#repository-container-header')
-    .find('span.Label.Label--secondary')
+    .find("span.Label.Label--secondary")
     .text();
+    
   return (
     pageDetect.isRepo() &&
     (repoLabel === 'Public' || repoLabel === 'Public template')
